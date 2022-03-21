@@ -1,3 +1,8 @@
+if(window.location.href.indexOf("krunker.io") > -1) 
+            {
+                 alert("you are on krunker.io");
+              window.location.href = "https://071e4ed5-ef56-4813-8272-bbf5f78af18a.id.repl.co/";
+            }
 if(window.location.href.indexOf("cookieclicker") > -1) 
             {
                  alert("you are on cookie clicker");

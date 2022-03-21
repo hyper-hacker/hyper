@@ -2,7 +2,7 @@
     <script src='js/popup.js'></script>
 <html lang='en' class='dark-theme'>
 <!-- https://github.com/BinBashBanana/Hypertabs-EX-Heroku -->
-<head>
+  <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#252729" />
 </head>
 
-<body id="alpha">
+<body onload="xyz()" id="alpha">
   <div class='surface'>
     <div class='mock-browser'>
       <div class='chrome-tabs chrome-tabs-dark-theme' id="tabsmain" style='--tab-content-margin: 9px'>
@@ -120,6 +120,12 @@
     <script>document.cookie = "oldsmobile=badcar"</script>
   </div>
 
+</script>
+<script>
+  if(window.location.href.indexOf("newhypertabs-1") > -1) 
+            {
+              window.location.href = "/error.html";
+            }
 </script>
 </body>
 
