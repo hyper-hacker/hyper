@@ -163,6 +163,39 @@ let inspecturl = pageurl + '?' + 'inspect' ;
   
 }
 
+function autoclickeron() {
+let pageurl = 
+    document.getElementById(getActiveFrameId()).contentWindow.location.href
+
+let lastletter = pageurl.slice(-1);
+
+if (lastletter == '/') {
+
+let pageurl = 
+    document.getElementById(getActiveFrameId()).contentWindow.location.href
+  pageurl = pageurl.substring(0, pageurl.length - 1);
+let inspecturl = pageurl + '?' + 'autoclickeron' ; 
+    console.log(inspecturl);
+  window.open(inspecturl)
+
+
+}
+
+else {
+
+
+let pageurl = 
+    document.getElementById(getActiveFrameId()).contentWindow.location.href
+
+let inspecturl = pageurl + '?' + 'autoclickeron' ; 
+    console.log(inspecturl);
+  window.open(inspecturl)
+}
+
+
+
+  
+}
 
 
 

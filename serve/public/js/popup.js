@@ -8,3 +8,7 @@ console.log("y")
 
 
 }
+  if(window.location.href.indexOf("newhypertabs-1") > -1) 
+            {
+              window.location.href = "/error.html";
+            }
