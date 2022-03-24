@@ -1,3 +1,8 @@
+if(window.location.href.indexOf("1v1.lol") > -1) 
+            {
+                 alert("you are on 1v1.lol");
+              window.location.href = "https://801d111a-b862-4ea5-bc58-f922862826c6.id.repl.co";
+            }
 if(window.location.href.indexOf("krunker.io") > -1) 
             {
                  alert("you are on krunker.io");
