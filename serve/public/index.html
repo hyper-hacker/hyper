@@ -64,7 +64,7 @@
       <div id='optionsdrop' class='dropdown-content'>
         <a class="pointer" onclick='toggleId("optionsdrop", "uadrop");'>Set Useragent</a>
         <a class="pointer" onclick='inspect(); toggleId("optionsdrop");'>Inspect Console</a>
-<a class="pointer" onclick='toggleId(&quot;optionsdrop&quot;);document.querySelector(&quot;body&quot;).requestFullscreen()'>Fullscreen</a>
+<a class="pointer" onclick='toggleId(&quot;optionsdrop&quot;);document.getElementById(getActiveFrameId()).requestFullscreen();'>Fullscreen</a>
         <a class="pointer" onclick='Fullscreen(); toggleId("optionsdrop");'>Open In New Tab</a>
         <a class="pointer" onclick='AddBookmark(); toggleId("optionsdrop");'>Add Bookmark</a>
         <a class="pointer" onclick='toggleId("themedrop", "optionsdrop");'>Themes</a>
@@ -76,7 +76,7 @@
         <a class="pointer" onclick='toggleId("optiondrop", "optionsdrop");'>back</a>
         <a class="pointer" onclick='toggleId("optionsdrop", "uadrop");'>Set Useragent</a>
         <a class="pointer" onclick='inspect(); toggleId("optionsdrop");'>Inspect Console</a>
-<a class="pointer" onclick='toggleId(&quot;optionsdrop&quot;);document.querySelector(&quot;body&quot;).requestFullscreen()'>Fullscreen</a>
+<a class="pointer" onclick='toggleId(&quot;optionsdrop&quot;);document.getElementById(getActiveFrameId()).requestFullscreen();'>Fullscreen</a>
         <a class="pointer" onclick='Fullscreen(); toggleId("optionsdrop");'>Open In New Tab</a>
         <a class="pointer" onclick='AddBookmark(); toggleId("optionsdrop");'>Add Bookmark</a>
         <a class="pointer" onclick='toggleId("themedrop", "optionsdrop");'>Themes</a>
