@@ -19,3 +19,8 @@ function alloy() {
    Cookies.set('hostcookie' , 'https://alloyproxyorg-1.nobody111.repl.co?')
  location.reload();
 }
+if (document.cookie.match(/^(.*;)?\s*hostcookie\s*=\s*[^;]+(.*)?$/) === null)
+{
+document.cookie = "hostcookie=/service/";
+  console.log('=null')
+}
