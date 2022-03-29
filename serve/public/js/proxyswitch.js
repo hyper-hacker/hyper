@@ -24,3 +24,8 @@ if (document.cookie.match(/^(.*;)?\s*hostcookie\s*=\s*[^;]+(.*)?$/) === null)
 document.cookie = "hostcookie=/service/";
   console.log('=null')
 }
+function imageurl(){
+let person = prompt("Enter Image URL. Enter None To Clear (NOTE: PAGE WILL REFRESH)", "None");
+  Cookies.set('backgroundimageurl', person)
+  location.reload();
+}

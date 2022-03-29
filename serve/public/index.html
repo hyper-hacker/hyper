@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <script src='js/popup.js'></script>
+    <script src='js/favicon.js'></script>
 <html lang='en' class='dark-theme'>
 <!-- https://github.com/BinBashBanana/Hypertabs-EX-Heroku -->
   <head>
@@ -67,7 +68,9 @@
         <a class="pointer" onclick='Fullscreen(); toggleId("optionsdrop");'>Open In New Tab</a>
         <a class="pointer" onclick='AddBookmark(); toggleId("optionsdrop");'>Add Bookmark</a>
         <a class="pointer" onclick='toggleId("themedrop", "optionsdrop");'>Themes</a>
+        <a class="pointer" onclick='toggleId("optionsdrop"); imageurl()'>Background Image</a>
         <a class="pointer" onclick='toggleId("extensiondrop", "optionsdrop");'>Change Proxy</a>
+        <a class="pointer" onclick='toggleId("disguisedrop", "optionsdrop");'>Tab Disguise</a>
       </div>
       <div id="optiondrop" class='dropdown-content'>
         <a class="pointer" onclick='toggleId("optiondrop", "optionsdrop");'>back</a>
@@ -77,7 +80,9 @@
         <a class="pointer" onclick='Fullscreen(); toggleId("optionsdrop");'>Open In New Tab</a>
         <a class="pointer" onclick='AddBookmark(); toggleId("optionsdrop");'>Add Bookmark</a>
         <a class="pointer" onclick='toggleId("themedrop", "optionsdrop");'>Themes</a>
+        <a class="pointer" onclick='toggleId("optionsdrop"); imageurl()'>Background Image</a>
         <a class="pointer" onclick='toggleId("extensiondrop", "optionsdrop");'>Change Proxy</a>
+        <a class="pointer" onclick='toggleId("disguisedrop", "optionsdrop");'>Tab Disguise</a>
       </div>
       <div id="uadrop" class=dropdown-content>
         <a class="pointer" onclick='toggleId("uadrop", "optiondrop");'>back</a>
@@ -114,6 +119,15 @@
                 <a class="pointer" onclick='ultraviolet(); toggleId("extensiondrop");'>Ultraviolet</a>
 
                 <a class="pointer" onclick='alloy(); toggleId("extensiondrop");'>Alloy</a>
+
+      </div>
+      <div id="disguisedrop" class='dropdown-content'>
+        <a class="pointer" onclick='toggleId("disguisedrop","optionsdrop")'>back</a>
+
+<a class="pointer" onclick='toggleId("disguisedrop"); changeFavicon(prompt("Enter Link To Icon.", "https://www.google.com/favicon.ico")) '>Change Tab Icon</a>
+
+<a class="pointer" onclick='toggleId("disguisedrop"); document.title= prompt("Enter New Title.", "Google");'>Change Title</a>
+
 
       </div>
 
