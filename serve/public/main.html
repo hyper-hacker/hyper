@@ -6,7 +6,9 @@
     <title>New Tab</title>
     <link rel='stylesheet' href='css/css.css'>
 </head>
-
+<script>
+  !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e=e||self,function(){var n=e.Cookies,o=e.Cookies=t();o.noConflict=function(){return e.Cookies=n,o}}())}(this,(function(){"use strict";function e(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)e[o]=n[o]}return e}return function t(n,o){function r(t,r,i){if("undefined"!=typeof document){"number"==typeof(i=e({},o,i)).expires&&(i.expires=new Date(Date.now()+864e5*i.expires)),i.expires&&(i.expires=i.expires.toUTCString()),t=encodeURIComponent(t).replace(/%(2[346B]|5E|60|7C)/g,decodeURIComponent).replace(/[()]/g,escape);var c="";for(var u in i)i[u]&&(c+="; "+u,!0!==i[u]&&(c+="="+i[u].split(";")[0]));return document.cookie=t+"="+n.write(r,t)+c}}return Object.create({set:r,get:function(e){if("undefined"!=typeof document&&(!arguments.length||e)){for(var t=document.cookie?document.cookie.split("; "):[],o={},r=0;r<t.length;r++){var i=t[r].split("="),c=i.slice(1).join("=");try{var u=decodeURIComponent(i[0]);if(o[u]=n.read(c,u),e===u)break}catch(e){}}return e?o[e]:o}},remove:function(t,n){r(t,"",e({},n,{expires:-1}))},withAttributes:function(n){return t(this.converter,e({},this.attributes,n))},withConverter:function(n){return t(e({},this.converter,n),this.attributes)}},{attributes:{value:Object.freeze(o)},converter:{value:Object.freeze(n)}})}({read:function(e){return'"'===e[0]&&(e=e.slice(1,-1)),e.replace(/(%[\dA-F]{2})+/gi,decodeURIComponent)},write:function(e){return encodeURIComponent(e).replace(/%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g,decodeURIComponent)}},{path:"/"})}));
+</script>
 <body id="body">
     <script src="js/bookmarks.js"></script>
     <div class="bookmarks">
@@ -14,9 +16,9 @@
     <div class="center">
         <h1 id="headtxt">Hypertabs-EX</h1>
         <p id="txt" style="width:600px">Public deployable release (unofficial)<br>Updates:</a> &bull; <a style="color:#3ec3f0" href="https://github.com/hyper-hacker/hyper" target="_blank">GitHub</a><br></br></p>
-        <forum id="input" onkeydown="if(event.keyCode == 13){location.href='/service/https://www.google.com/search?q='+document.getElementById('inputb').value}" onsubmit="location.href='/service/https://www.google.com/search?q='+document.getElementById('inputb').value">
+        <forum id="input" onkeydown="if(event.keyCode == 13){location.href=Cookies.get('hostcookie')+'https://www.google.com/search?q='+document.getElementById('inputb').value}" onsubmit="location.href=Cookies.get('hostcookie')+'https://www.google.com/search?q='+document.getElementById('inputb').value">
             <input id="inputb" placeholder="Search Google">
-            <input id="inputimg" onclick="location.href='/service/https://www.google.com/search?q='+document.getElementById('inputb').value" type="image" value="Login" src="search.svg" height="24" width="24">
+            <input id="inputimg" onclick="location.href=Cookies.get('hostcookie')'https://www.google.com/search?q='+document.getElementById('inputb').value" type="image" value="Login" src="search.svg" height="24" width="24">
             <input type="submit" style="display:none">
         </forum>
         <div class="btns">
@@ -24,13 +26,13 @@
                 <img class="icn" src="games.png">
                 <a class="btn1" id="bo">Games</a>
             </div>
-            <div onclick="location.href='c.html'" class="crm">
+            <div onclick="location.href='apps.html'" class="crm">
                 <img class="icn" src="icon.png">
-                <a class="btn">Contributors</a>
+                <a class="btn">Apps</a>
             </div>
-            <div onclick="window.open(atob('aHR0cHM6Ly9kaXNjb3JkLmdnL3VuYmxvY2s='))" class="crm">
+            <div onclick="location.href='/service/https://discord.com'" class="crm">
                 <img class="icn" src="dcd.png">
-                <a class="btn">Join Discord</a>
+                <a class="btn">Discord</a>
             </div>
         </div>
     </div>

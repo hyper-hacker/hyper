@@ -19,6 +19,10 @@ function alloy() {
    Cookies.set('hostcookie' , 'https://alloyproxyorg-1.nobody111.repl.co?')
  location.reload();
 }
+function ie() {
+   Cookies.set('hostcookie' , 'https://ie10.ieonchrome.com/#')
+ location.reload();
+}
 if (document.cookie.match(/^(.*;)?\s*hostcookie\s*=\s*[^;]+(.*)?$/) === null)
 {
 document.cookie = "hostcookie=/service/";
@@ -28,4 +32,9 @@ function imageurl(){
 let person = prompt("Enter Image URL. Enter None To Clear (NOTE: PAGE WILL REFRESH)", "None");
   Cookies.set('backgroundimageurl', person)
   location.reload();
+}
+function customproxy() {
+  let proxyurl = prompt("Enter Proxy Url")
+   Cookies.set('hostcookie' , proxyurl)
+ location.reload();
 }

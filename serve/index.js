@@ -30,4 +30,3 @@ server.on('upgrade', (clientRequest, clientSocket, clientHead) => proxy.upgrade(
 
 server.listen(port);
 console.log('Listening on port ' + port);
-
